@@ -2,31 +2,41 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="./css/css-contacto/contacto.css" />
   <title>Laboratorio Creativo - Contacto</title>
   <!-- Inlcuir JQuery -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js">
-</script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 </head>
 
 <body>
   <header class="cabecera">
-    <div class="cabecera__logo"><a href="#"><img src="./img/img-index/empresa7.jpg" alt="image" height="80" width="100"
-          class="logo"></a></div>
+    <div class="cabecera__logo">
+      <a href="#"><img src="./img/img-index/empresa7.jpg" alt="image" height="80" width="100" class="logo" /></a>
+    </div>
     <nav>
       <ul class="cabecera__menu">
-        <li class="cabecera__item"><a href="./index.html">Presentación</a></li>
-        <li class="cabecera__item"><img src="./img/img-contacto/persona1.png" alt="image-presenracion-personal" height="22"
-            width="22" class="logocont"><a href="./presentacionPersonal.html">&nbsp;Integrantes</a></li>
-        <li class="cabecera__item"><img src="./img/img-contacto/contacto.png" alt="image-contacto" height="20" width="20"
-            class="logocont"></a><a href="./contacto.html">&nbsp;Contacto</a></li>
-        <li class="cabecera__item"><img src="./img/img-index/presentacion3.png" alt="image-consulta-api" height="20"
-            width="20" class="logocont"></a><a href="./Consulta-API.html">&nbsp;Consulta API</a></li>
-            <li class="cabecera__item"><img src="./img/img-multitarea/multarea.png" height="20" width="20"
-              class="logocont"></a><a href="./wizard.html">&nbsp;Multitarea</a></li>
+        <li class="cabecera__item">
+          <a href="./index.html">Presentación</a>
+        </li>
+        <li class="cabecera__item">
+          <img src="./img/img-contacto/persona1.png" alt="image-presenracion-personal" height="22" width="22"
+            class="logocont menu-icono" /><a href="./presentacionPersonal.html">&nbsp;Integrantes</a>
+        </li>
+        <li class="cabecera__item">
+          <img src="./img/img-contacto/contacto.png" alt="image-contacto" height="20" width="20"
+            class="logocont menu-icono" /><a href="./contacto.html">&nbsp;Contacto</a>
+        </li>
+        <li class="cabecera__item">
+          <img src="./img/img-index/presentacion3.png" alt="imagen-consulta-clientes" height="20" width="20"
+            class="logocont menu-icono" /><a href="./Consulta-API.html">&nbsp;Clientes</a>
+        </li>
+        <li class="cabecera__item">
+          <img src="./img/img-multitarea/multarea.png" height="20" width="20" class="logocont menu-icono" /><a
+            href="./wizard.html">&nbsp;Multitarea</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -38,26 +48,31 @@
         <div>
           <label for="nombre" class="colocar_nombre">Nombre <span class="obligatorio">*</span></label>
           <!--Label: representa una etiqueta para un elemento en una interfaz de usuario.--->
-          <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"  placeholder=" Escribe tu nombre" >
+          <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+            placeholder=" Escribe tu nombre" />
         </div>
         <!--for: el atributo for se utiliza para determinar el ID del elemento de entrada al que se debe asociar el título-->
         <div>
           <label for="apellido" class="colocar_apellido">Apellido<span class="obligatorio">*</span></label>
           <!--Label: representa una etiqueta para un elemento en una interfaz de usuario.--->
-          <input type="text" name="introducir_apellido" id="apellido" required="obligatorio" placeholder=" Escribe tu apellido">
+          <input type="text" name="introducir_apellido" id="apellido" required="obligatorio"
+            placeholder=" Escribe tu apellido" />
         </div>
         <div>
           <!--<input> se usa para crear controles interactivos para formularios basados en la web con el fin de recibir datos del usuario-->
           <label for="provincia" class="colocar_provicia">Provincia <span class="obligatorio">*</span></label>
-          <input type="provincia" name="introducir_provincia" id="provincia" required="obligatorio" placeholder=" Escribe tu Provincia">
+          <input type="provincia" name="introducir_provincia" id="provincia" required="obligatorio"
+            placeholder=" Escribe tu Provincia" />
         </div>
         <div>
           <label for="email" class="colocar_email">Email<span class="obligatorio">*</span></label>
-          <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder=" Escribe tu Email">
+          <input type="email" name="introducir_email" id="email" required="obligatorio"
+            placeholder=" Escribe tu Email" />
         </div>
         <div>
           <label for="telefone" class="colocar_telefono">Teléfono <span class="obligatorio">*</span></label>
-          <input type="tel" name="introducir_telefono" id="telefono" required="obligatorio" minlength="10" placeholder=" Escribe tu teléfono">
+          <input type="tel" name="introducir_telefono" id="telefono" required="obligatorio" minlength="10"
+            placeholder=" Escribe tu teléfono" />
         </div>
         <!--atributo placeholder: consejo o indicación corta que puede consistir en una solo palabra o en una pequeña frase-->
         <!--El atributo required de HTML es una característica de tipo booleana que puede introducirse en una etiqueta input. Al ser de tipo booleano, este atributo ejerce su función con el simple hecho de existir dentro de la etiqueta.-->
@@ -66,28 +81,35 @@
           <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje"
             placeholder=" Deja aquí tu comentario..."></textarea>
         </div>
-  
+
         <button type="submit" name="enviar_formulario" id="enviar">
           <p>Enviar</p>
         </button>
         <p class="aviso">
-                    <span class="obligatorio"> * </span>Los campos son obligatorios.
-                  </p> 
-                  
+          <span class="obligatorio"> * </span>Los campos son obligatorios.
+        </p>
       </form>
-       </div>
+    </div>
   </div>
 
   <footer>
     <div class="pie">
       <ul class="pie__redes">
-        <li><a href="https://www.twitter.com/" target="_blank"><img src="./img/img-index/twitter.svg" class="pie__icono"></a></li>
-        <li><a href="https://www.facebook.com/" target="_blank"><img src="./img/img-index/facebook.svg" class="pie__icono"></a></li>
-        <li><a href="https://www.instagram.com/" target="_blank"><img src="./img/img-index/instagram.svg" class="pie__icono"></a></li>
+        <li>
+          <a href="https://www.twitter.com/" target="_blank"><img src="./img/img-index/twitter.svg"
+              class="pie__icono" /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/" target="_blank"><img src="./img/img-index/facebook.svg"
+              class="pie__icono" /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank"><img src="./img/img-index/instagram.svg"
+              class="pie__icono" /></a>
+        </li>
       </ul>
     </div>
   </footer>
-
 </body>
 
 </html>

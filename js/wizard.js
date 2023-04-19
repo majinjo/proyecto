@@ -51,13 +51,11 @@ function mostrarDatos() {
     const boton = document.getElementById("miBoton");
 
     var heading = document.createElement("h2");
-    var heading_text = document.createTextNode("Gracias por acercate a nosotros " + "\n" 
-        + nombre + "\n" +
-        ", Nos contactaremos a través de tu teléfono, " + "\n" + telefono + "\n" +
-        " de lo contrario por tu email : " + "\n" + correo + "\n" +
-        " que supo de nosotros por ..., " + "\n" + medio + "\n" +
-        ".Que vive en, " + "\n" + direccion + "\n" +
-        "y su casilla postal es , " + "\n" + postal + "\n" );
+    var heading_text = document.createTextNode(nombre + ", de dirección: "+ direccion +", Código Postal: "+ postal +", hemos recibido su solicitud de servicio. "+"\n" 
+        +"Gracias por contactarse con nosotros! " + "\n"
+        +"A la brevedad, nos comunicaremos con Ud. al número de teléfono: " + telefono + "\n"
+        +"o a su email: " + correo + ", para informarle los detalles de su turno de consulta."+"\n"
+        +"Sin otro particular, Laboratorio Creativo lo saluda a Ud. con atenta consideración.");
     heading.appendChild(heading_text);
     document.body.appendChild(heading);
     boton.disabled = true;     
