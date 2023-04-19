@@ -1,0 +1,218 @@
+/* Importación de fuentes de google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght300;@900&display=swap');
+
+/* Agregado ----------Es para reseatear los valores que por defecto traen estos atributos en los navegadores */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f3bd !important;
+}
+/* header desde*/
+.cabecera {
+    display: flex;
+    background: #028090;
+    justify-content: space-between;
+    padding-top: 3px;
+    padding-bottom: 8px;
+    width: 100%;
+  }
+  
+  .cabecera__menu {
+     display: flex;
+      width: 100%;
+      align-items: center;
+      list-style: none;
+      padding-top: 5px;
+  }
+  
+  .cabecera__item {
+      margin-right: 50px;
+      text-transform: uppercase; /* transforma minúsculas en mayusculas */
+      font-family: 'Poppins', sans-serif; /* tipo de fuente */
+      font-size: larger;
+      font-weight: bolder;
+  }
+  
+  .cabecera__item a {
+      text-decoration: none; /* le quita el subrayado del link */
+      color: #f0f3bd;
+  }
+  
+  .cabecera__logo {
+    padding-left: 50px;
+    align-items: center;
+  }
+  /* header hasta*/
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    background-color: #f0f3bd;
+}
+
+h1 {
+    margin-top: 100px !important;
+    text-transform: uppercase;
+    /* Para hacer mayúscula un texto */
+    letter-spacing: 0.20em !important;
+    /* espacio entre letras */
+    line-height: 1.6 !important;
+    /* interlineado */
+    margin-left: 100px;
+    font-size: 50px;
+    font-weight: 800;
+    color: #028090;
+    padding-top: 30;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 300 !important;
+    /* anterior 'Roboto', sans-serif */
+}
+
+.pie {
+    background-color: #00a896;
+    /* color del pie de la pagina */
+    position: fixed;
+    /* acomoda el footer */
+    height: 50px;
+    bottom: 0;
+    /* proximidad al piso de la pagina - Posicionamos el pie pegada hacia abajo*/
+    width: 100%;
+    /* ancho */
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.pie__redes {
+    display: flex;
+    /* esto es para que lo items q contiene la ul se coloquen horizontal */
+    justify-content: space-around;
+    /* espacio alrededor de los elementos */
+    width: 100%;
+    list-style: none;
+    /* para quitarle la viñeta a los li de las ul */
+    align-items: center !important;
+    margin-bottom: 0;
+    padding-left: 40px !important;
+    padding-top: 2px !important;
+}
+
+.pie__icono {
+    width: 23px;
+    /* ancho del icono */
+    height: 23px;
+    /*alto del icono */
+}
+
+/*---------------- RESPONSIVE------------------ */
+
+
+@media screen and (max-width: 425px) {
+
+    body,
+    header {
+        width: 425px;
+    }
+
+    .cabecera {
+        padding-left: 0;
+    }
+
+    .cabecera__logo img {
+        padding-top: 15px;
+    }
+
+    nav {
+        width: 400px;
+    }
+
+    .cabecera__menu {
+        flex-direction: column;
+        width: 250px;
+        padding-left: 30px;
+        align-items: initial;
+    }
+
+
+    main {
+        margin-left: 0;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .row h1 {
+        margin-top: 170px !important;
+        margin-left: 10px !important;
+    }
+
+    .descripcion {
+        max-width: 100%;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+
+    .pie {
+        max-width: 425;
+    }
+
+    .pie__redes {
+        flex: auto;
+        width: 300px;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center !important;
+        margin-bottom: 0 !important;
+        padding-left: 0 !important;
+    }
+}
+
+
+@media screen and (min-width:426px) and(max-width:767px) {
+
+    .cabecera {
+        flex-wrap: wrap !important;
+        width: 100% !important;
+    }
+
+    .cabecera__logo {
+        display: flex !important;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column !important;
+        width: 400px;
+    }
+
+    .cabecera__item {
+        margin-right: 10px !important;
+        text-transform: uppercase;
+        /* transforma minúsculas en mayusculas */
+        font-family: 'Roboto', 'Open Sans', sans-serif;
+        font-weight: bolder;
+        width: 100px !important;
+        font-size: 20px !important;
+    }
+
+    .logocont {
+        display: none;
+    }
+
+
+    .pie__redes {
+        width: 85%;
+        padding-left: 0;
+    }
+}
+
+tbody {
+    height:40%;
+}

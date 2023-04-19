@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght300;@900&display=swap');
+
+/* Agregado ----------Es para reseatear los valores que por defecto traen estos atributos en los navegadores */
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    /*background-image: url(ubicacion de la foto de fondo, debe ser la misma carpeta); */
+    background-size:auto;
+    background-color: #f0f3bd;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif; /* tipo de fuente */
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+}
+
+/* header desde*/
+.cabecera {
+    display: flex;
+    background: #028090;
+    justify-content: space-between;
+    padding-top: 3px;
+    padding-bottom: 1px;
+    width: 100%;
+  }
+  
+  .cabecera__menu {
+     display: flex;
+      width: 100%;
+      align-items: center;
+      list-style: none;
+      padding-top: 5px;
+  }
+  
+  .cabecera__item {
+      margin-right: 50px;
+      text-transform: uppercase; /* transforma minúsculas en mayusculas */
+      font-family: 'Roboto', 'Open Sans', sans-serif;
+      font-size: larger;
+      font-weight: bolder;
+  }
+  
+  .cabecera__item a {
+      text-decoration: none; /* le quita el subrayado del link */
+      color: #f0f3bd;
+  }
+  
+  .cabecera__logo {
+    padding-left: 50px;
+    align-items: center;
+  }
+  /* header hasta*/
+
+.container {
+    margin-top: 12%;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    background-color: #f0f3bd;
+    margin-left: 190px;
+}
+
+
+.titulo{
+    letter-spacing: 0.20em; /* espacio entre letras */
+    line-height: 1.6;   /* interlineado */
+    margin-left: 100px;
+    font-size: 50px;
+    font-weight: 800;
+    color: #028090; 
+    padding-top: 30;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* anterior 'Roboto', sans-serif */
+}
+
+
+.descripcion {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 80%;
+    padding: 2px;
+    color: #747373;
+    display: flex;
+    margin-top: 120px;
+}
+.textodescripcion{
+    padding-left: 35px;
+    
+}
+
+.pie {
+    background-color: #00a896; /* color del pie de la pagina */
+    position: fixed; /* acomoda el footer */
+    height: 50px;
+    bottom: 0; /* proximidad al piso de la pagina - Posicionamos el pie pegada hacia abajo*/
+    width: 100%; /* ancho */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.pie__redes{
+    display: flex; /* esto es para que lo items q contiene la ul se coloquen horizontal */
+    justify-content: space-around; /* espacio alrededor de los elementos */
+    width: 100%;
+    list-style: none; /* para quitarle la viñeta a los li de las ul */
+}
+
+.pie__icono {
+    width: 23px; /* ancho del icono */
+    height: 23px; /*alto del icono */
+}
+
+/*---------------- RESPONSIVE------------------ */
+
+@media screen and (max-width: 425px) {
+    body, header {
+        width: 425px;
+    }
+
+    .cabecera{
+        padding-left: 0;
+    }
+    
+    .cabecera__logo img {
+        padding-top: 15px;
+    }
+
+    nav {
+        width: 400px;
+    }
+
+    .cabecera__menu {
+        flex-direction: column;
+        width: 250px;
+        align-items: initial;
+    }
+
+
+    main {
+        margin-left: 0;
+        text-align: center;
+        padding-left: 0;
+    } 
+
+    .titulo {
+        margin-left: 0;
+    }
+    
+    .descripcion{
+        max-width: 100%;
+    } 
+    #presentacion2{
+        float: none;
+        width: 425px;
+        height: 250px;
+        align-items: center;
+    }
+    p {
+        text-align: justify;        
+    }
+   
+    .pie {
+        max-width: 425px;
+    }
+
+    .pie__redes {
+        flex: auto;
+        width: 300px;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media screen and(max-width:767px){
+.cabecera__menu {width: auto;}
+
+.pie__redes{
+    width: 85%;
+    padding-left: 0;}
+    
+
+
+}

@@ -1,0 +1,217 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght300;@900&display=swap');
+
+/* Agregado ----------Es para reseatear los valores que por defecto traen estos atributos en los navegadores */
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    /*background-image: url(ubicacion de la foto de fondo, debe ser la misma carpeta); */
+    background-size:auto;
+    background-color: #f0f3bd;
+
+    /* Agregado */
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif; /* tipo de fuente */
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+}
+/* header desde*/
+.cabecera {
+    display: flex;
+    background: #028090;
+    justify-content: space-between;
+    padding-top: 3px;
+    padding-bottom: 1px;
+    width: 100%;
+  }
+  
+  .cabecera__menu {
+     display: flex;
+      width: 100%;
+      align-items: center;
+      list-style: none;
+      padding-top: 5px;
+  }
+  
+  .cabecera__item {
+      margin-right: 50px;
+      text-transform: uppercase; /* transforma minúsculas en mayusculas */
+      font-family: 'Poppins', sans-serif; /* tipo de fuente */
+      font-size: larger;
+      font-weight: bolder;
+  }
+  
+  .cabecera__item a {
+      text-decoration: none; /* le quita el subrayado del link */
+      color: #f0f3bd;
+  }
+  
+  .cabecera__logo {
+    padding-left: 50px;
+    align-items: center;
+  }
+  /* header hasta*/
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 60px;
+    color: #6a6a6a;
+    margin-top: 100px;
+    font-weight: 100;
+   
+}
+
+.titulo__descripcion p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0 1rem;
+    text-align: center;
+    color: #747373;
+}
+
+.titulo__Staff{
+    text-align: center;
+    font-size: 40px;
+    color: #6a6a6a;
+    margin-top: 80px;
+    font-weight:100;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 1320px; /* esta medida para que entren 3 tarjetas horizontalmente por linea en Desktop*/
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container .card{
+    width: 400px;
+    height: 650px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    background: #f0f3bd;
+background: linear-gradient(164deg,#f0f3bd 0%, #e0e48e 80%);
+background: -webkit-linear-gradient(164deg,#f0f3bd 0%, #e0e48e 80%);
+background: -moz-linear-gradient(164deg,#f0f3bd 0%, #e0e48e 80%);
+}
+
+.container .card img{
+    width: 250px; /* 330px; */
+    height: 220px;
+    border-radius: 4px;
+      margin: 30px auto;
+}
+
+
+.container .card h4{
+    font-weight: 650;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 15px;
+    font-weight: 350;
+    
+}
+
+.container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+
+/* las clases van con .clase, y pueden ir por separado, en lo personal prefiero ponerlas por separado para no marearme*/
+.pie {
+    background-color: #00a896; /* color del pie de la pagina */
+    position: fixed; /* acomoda el footer */
+    height: 50px;
+    bottom: 0; /* proximidad al piso de la pagina - Posicionamos el pie pegada hacia abajo*/
+    width: 100%; /* ancho */
+    display: flex;
+    text-align: center;
+    /* left: 0; */ /* Posicionamos el pie al lado izquierdo */
+}
+
+.pie__redes{
+    display: flex; /* esto es para que lo items q contiene la ul se coloquen horizontal */
+    justify-content: space-around; /* espacio alrededor de los elementos */
+    width: 100%;
+    list-style: none; /* para quitarle la viñeta a los li de las ul */
+    align-items: center;
+}
+
+.pie__icono {
+    width: 23px; /* ancho del icono */
+    height: 23px; /*alto del icono */
+}
+
+/*---------------- RESPONSIVE------------------ */
+@media screen and (max-width: 425px) {
+    body, header {
+        width: 425px;
+    }
+
+    .cabecera{
+        padding-left: 0;
+    }
+    
+    .cabecera__logo img {
+        padding-top: 15px;
+    }
+
+    nav {
+        width: 400px;
+    }
+
+    .cabecera__menu {
+        flex-direction: column;
+        width: 250px;
+        align-items: center;
+    }
+
+    .pie {
+        max-width: 425px;
+    }
+
+    .pie__redes {
+        flex: auto;
+        width: 300px;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+    }
+}
+@media screen and(max-width:767px){
+    .cabecera__menu {width: auto;}
+    
+    .pie__redes{
+        width: 85%;
+        padding-left: 0;}
+    }
+  
